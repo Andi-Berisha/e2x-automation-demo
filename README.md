@@ -8,7 +8,7 @@ To run this test suite, follow the steps below:
 
 1. Clone the repository to your local machine.
 2. Install the necessary dependencies by running `npm install`.
-3. Run the tests by running `npm test`.
+3. Run the tests by running `npx playwright test` or `npx playwright test --headed` to run in headed mode.
 
 ## Test Description
 
