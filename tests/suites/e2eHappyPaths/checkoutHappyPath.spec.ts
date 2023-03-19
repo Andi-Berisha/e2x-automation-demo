@@ -52,7 +52,5 @@ test.describe("E2E Checkout Happy Path", () => {
       checkoutData.shippingCost,
       checkoutData.taxCost
     );
-
-    await page.pause();
   });
 });
