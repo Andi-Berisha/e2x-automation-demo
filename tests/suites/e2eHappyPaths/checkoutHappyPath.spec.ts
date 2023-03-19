@@ -3,7 +3,6 @@ import { CartPage } from "../../../src/pages/cartPage";
 
 test.describe("E2E Checkout Happy Path", () => {
   test("Search for hand soap, add item to cart and complete order", async ({
-    page,
     home,
     PLP,
     PDP,

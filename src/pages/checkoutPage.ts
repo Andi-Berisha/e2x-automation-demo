@@ -46,7 +46,7 @@ export class CheckoutPage {
     this.checkoutPageLocators = {
       //Customer Section Locators
       emailInput: page.locator("#email"),
-      privacyCheckbox: page.locator("#privacyPolicy"),
+      privacyCheckbox: page.locator('label:has-text("Yes, I agree with the ")'),
       customerSectionContinueButton: page.locator(
         "#checkout-customer-continue"
       ),
@@ -99,6 +99,7 @@ export class CheckoutPage {
     await this.checkoutPageLocators.emailInput.type(this.user.email, {
       delay: 200,
     });
+    // 'Yes, I agree with the privacy policy.'
     await this.checkoutPageLocators.privacyCheckbox.click({
       force: true,
       position: { x: 10, y: 10 },
