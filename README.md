@@ -1,4 +1,4 @@
-# Playwright Framework Test Suite
+# E2X Automation Demo using Playwright
 
 This repository contains a Playwright framework that tests the checkout process for a fictional e-commerce website. The `E2E Checkout Happy Path` test suite performs an end-to-end checkout process by searching for a product, adding it to the cart, and completing the order.
 
