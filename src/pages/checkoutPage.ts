@@ -99,7 +99,11 @@ export class CheckoutPage {
     await this.checkoutPageLocators.emailInput.type(this.user.email, {
       delay: 200,
     });
-    await this.checkoutPageLocators.privacyCheckbox.check({ force: true });
+    await this.checkoutPageLocators.privacyCheckbox.click({
+      force: true,
+      position: { x: 10, y: 10 },
+    });
+
     await this.checkoutPageLocators.customerSectionContinueButton.click();
     await this.page.waitForLoadState("networkidle");
   }
